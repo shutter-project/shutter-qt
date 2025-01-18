@@ -5,12 +5,13 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools)
 
 qt_standard_project_setup()
 
+set(CMAKE_AUTORCC true)
 qt_add_executable(shutter
-    WIN32 MACOSX_BUNDLE
     main.cpp
     shuttermainwindow.cpp
     shuttermainwindow.h
     shuttermainwindow.ui
+    shutter.qrc
 )
 
 qt_add_translations(

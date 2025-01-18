@@ -50,22 +50,22 @@
      </property>
      <addaction name="actionFoo"/>
     </widget>
-    <addaction name="action_Open"/>
+    <addaction name="actionOpen"/>
     <addaction name="menuRecent_Files"/>
     <addaction name="separator"/>
-    <addaction name="actionSave_As"/>
-    <addaction name="actionE_xport_to_PDF"/>
-    <addaction name="actionExport_to_Post_Script"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="actionExportToPDF"/>
+    <addaction name="actionExportToPostScript"/>
     <addaction name="separator"/>
-    <addaction name="actionPage_Set_up"/>
-    <addaction name="action_Print"/>
+    <addaction name="actionPageSetup"/>
+    <addaction name="actionPrint"/>
     <addaction name="separator"/>
-    <addaction name="actionSend_by_E_mail"/>
+    <addaction name="actionSendByEmail"/>
     <addaction name="separator"/>
-    <addaction name="action_Close"/>
-    <addaction name="action_Close_all"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionCloseAll"/>
     <addaction name="separator"/>
-    <addaction name="action_Quit"/>
+    <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menu_Edit">
     <property name="title">
@@ -81,27 +81,27 @@
     <addaction name="actionRedo"/>
     <addaction name="separator"/>
     <addaction name="actionCopy"/>
-    <addaction name="actionCopy_Filename"/>
-    <addaction name="actionMove_To_Trash"/>
+    <addaction name="actionCopyFilename"/>
+    <addaction name="actionMoveToTrash"/>
     <addaction name="separator"/>
-    <addaction name="action_Select_All"/>
+    <addaction name="actionSelectAll"/>
     <addaction name="separator"/>
     <addaction name="menu_Quick_profile_select"/>
     <addaction name="separator"/>
-    <addaction name="action_Parameters"/>
+    <addaction name="actionParameters"/>
    </widget>
    <widget class="QMenu" name="menu_View">
     <property name="title">
      <string>&amp;View</string>
     </property>
-    <addaction name="actionShow_Navigation_Toolbar"/>
+    <addaction name="actionShowNavigationToolbar"/>
     <addaction name="separator"/>
-    <addaction name="actionZoom_In"/>
-    <addaction name="actionZoom_Out"/>
-    <addaction name="action_Normal_Size"/>
-    <addaction name="action_Best_Fit"/>
+    <addaction name="actionZoomIn"/>
+    <addaction name="actionZoomOut"/>
+    <addaction name="actionNormalSize"/>
+    <addaction name="actionBestFit"/>
     <addaction name="separator"/>
-    <addaction name="action_Full_screen"/>
+    <addaction name="actionFullScreen"/>
    </widget>
    <widget class="QMenu" name="menu_Screenshot">
     <property name="title">
@@ -123,52 +123,52 @@
      </property>
      <addaction name="actionFoo"/>
     </widget>
-    <addaction name="action_Redo_last_screenshot"/>
+    <addaction name="actionRedoLastScreenshot"/>
     <addaction name="separator"/>
-    <addaction name="action_Selection"/>
-    <addaction name="action_Desktop"/>
+    <addaction name="actionSelection"/>
+    <addaction name="actionDesktop"/>
     <addaction name="menuSelect_D_esktop"/>
-    <addaction name="action_Active_Window"/>
-    <addaction name="actionSelect_Window"/>
+    <addaction name="actionActiveWindow"/>
+    <addaction name="actionSelectWindow"/>
     <addaction name="menuW_indow"/>
-    <addaction name="action_Menu"/>
-    <addaction name="action_Tooltip"/>
-    <addaction name="actionW_eb"/>
+    <addaction name="actionMenu"/>
+    <addaction name="actionTooltip"/>
+    <addaction name="actionWeb"/>
     <addaction name="separator"/>
-    <addaction name="actionImport_from_clipboard"/>
+    <addaction name="actionImportFromClipboard"/>
    </widget>
    <widget class="QMenu" name="menu_Actions">
     <property name="title">
      <string>&amp;Actions</string>
     </property>
-    <addaction name="action_Open_with"/>
-    <addaction name="actionShow_in_folder"/>
-    <addaction name="action_Rename"/>
+    <addaction name="actionOpenWith"/>
+    <addaction name="actionShowInFolder"/>
+    <addaction name="actionRename"/>
     <addaction name="separator"/>
-    <addaction name="actionSend_to"/>
-    <addaction name="actionE_xport"/>
-    <addaction name="actionPublic_URLs"/>
+    <addaction name="actionSendTo"/>
+    <addaction name="actionExport"/>
+    <addaction name="actionPublicURLs"/>
     <addaction name="separator"/>
-    <addaction name="action_Edit"/>
-    <addaction name="actionRun_a_plugin"/>
+    <addaction name="actionEdit"/>
+    <addaction name="actionRunPlugin"/>
    </widget>
    <widget class="QMenu" name="menu_Go">
     <property name="title">
      <string>&amp;Go</string>
     </property>
-    <addaction name="action_Back"/>
-    <addaction name="action_Forward"/>
+    <addaction name="actionBack"/>
+    <addaction name="actionForward"/>
     <addaction name="separator"/>
-    <addaction name="actionF_irst"/>
-    <addaction name="action_Last"/>
+    <addaction name="actionFirst"/>
+    <addaction name="actionLast"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
      <string>&amp;Help</string>
     </property>
-    <addaction name="actionGet_Help_Online"/>
-    <addaction name="action_Translate_this_application"/>
-    <addaction name="action_Report_a_problem"/>
+    <addaction name="actionGetHelpOnline"/>
+    <addaction name="actionTranslateThisApplication"/>
+    <addaction name="actionReportProblem"/>
     <addaction name="separator"/>
     <addaction name="actionAbout"/>
    </widget>
@@ -191,15 +191,15 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="action_Redo_last_screenshot"/>
+   <addaction name="actionRedoLastScreenshot"/>
    <addaction name="separator"/>
-   <addaction name="action_Selection"/>
-   <addaction name="action_Menu"/>
-   <addaction name="action_Tooltip"/>
-   <addaction name="action_Edit"/>
-   <addaction name="actionE_xport"/>
+   <addaction name="actionSelection"/>
+   <addaction name="actionMenu"/>
+   <addaction name="actionTooltip"/>
+   <addaction name="actionEdit"/>
+   <addaction name="actionExport"/>
   </widget>
-  <action name="action_Open">
+  <action name="actionOpen">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::DocumentOpen"/>
    </property>
@@ -207,7 +207,7 @@
     <string>&amp;Open</string>
    </property>
   </action>
-  <action name="actionSave_As">
+  <action name="actionSaveAs">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::DocumentSaveAs"/>
    </property>
@@ -215,7 +215,7 @@
     <string>Save &amp;As...</string>
    </property>
   </action>
-  <action name="action_Quit">
+  <action name="actionQuit">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::ApplicationExit"/>
    </property>
@@ -226,12 +226,12 @@
     <enum>QAction::MenuRole::QuitRole</enum>
    </property>
   </action>
-  <action name="action_Close">
+  <action name="actionClose">
    <property name="text">
     <string>&amp;Close</string>
    </property>
   </action>
-  <action name="action_Close_all">
+  <action name="actionCloseAll">
    <property name="text">
     <string>&amp;Close all</string>
    </property>
@@ -239,22 +239,22 @@
     <string>Close all</string>
    </property>
   </action>
-  <action name="actionE_xport_to_PDF">
+  <action name="actionExportToPDF">
    <property name="text">
     <string>E&amp;xport to PDF...</string>
    </property>
   </action>
-  <action name="actionExport_to_Post_Script">
+  <action name="actionExportToPostScript">
    <property name="text">
     <string>Export to Post&amp;Script</string>
    </property>
   </action>
-  <action name="actionPage_Set_up">
+  <action name="actionPageSetup">
    <property name="text">
     <string>Page Set&amp;up</string>
    </property>
   </action>
-  <action name="action_Print">
+  <action name="actionPrint">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::DocumentPrint"/>
    </property>
@@ -265,7 +265,7 @@
     <string>Print</string>
    </property>
   </action>
-  <action name="actionSend_by_E_mail">
+  <action name="actionSendByEmail">
    <property name="icon">
     <iconset theme="mail-send"/>
    </property>
@@ -302,12 +302,12 @@
     <string>&amp;Copy</string>
    </property>
   </action>
-  <action name="actionCopy_Filename">
+  <action name="actionCopyFilename">
    <property name="text">
     <string>Copy &amp;Filename</string>
    </property>
   </action>
-  <action name="actionMove_To_Trash">
+  <action name="actionMoveToTrash">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::EditDelete"/>
    </property>
@@ -315,12 +315,12 @@
     <string>Move To &amp;Trash</string>
    </property>
   </action>
-  <action name="action_Select_All">
+  <action name="actionSelectAll">
    <property name="text">
     <string>&amp;Select All</string>
    </property>
   </action>
-  <action name="action_Parameters">
+  <action name="actionParameters">
    <property name="text">
     <string>&amp;Parameters</string>
    </property>
@@ -328,12 +328,12 @@
     <enum>QAction::MenuRole::PreferencesRole</enum>
    </property>
   </action>
-  <action name="actionShow_Navigation_Toolbar">
+  <action name="actionShowNavigationToolbar">
    <property name="text">
     <string>Show Navigation &amp;Toolbar</string>
    </property>
   </action>
-  <action name="actionZoom_In">
+  <action name="actionZoomIn">
    <property name="icon">
     <iconset theme="zoom-in"/>
    </property>
@@ -341,7 +341,7 @@
     <string>Zoom &amp;In</string>
    </property>
   </action>
-  <action name="actionZoom_Out">
+  <action name="actionZoomOut">
    <property name="icon">
     <iconset theme="zoom-out"/>
    </property>
@@ -349,7 +349,7 @@
     <string>Zoom &amp;Out</string>
    </property>
   </action>
-  <action name="action_Normal_Size">
+  <action name="actionNormalSize">
    <property name="icon">
     <iconset theme="zoom-original"/>
    </property>
@@ -357,7 +357,7 @@
     <string>&amp;Normal Size</string>
    </property>
   </action>
-  <action name="action_Best_Fit">
+  <action name="actionBestFit">
    <property name="icon">
     <iconset theme="zoom-fit-best"/>
    </property>
@@ -365,7 +365,7 @@
     <string>&amp;Best Fit</string>
    </property>
   </action>
-  <action name="action_Full_screen">
+  <action name="actionFullScreen">
    <property name="icon">
     <iconset theme="view-fullscreen"/>
    </property>
@@ -373,7 +373,7 @@
     <string>&amp;Full screen</string>
    </property>
   </action>
-  <action name="action_Redo_last_screenshot">
+  <action name="actionRedoLastScreenshot">
    <property name="icon">
     <iconset theme="view-refresh"/>
    </property>
@@ -381,7 +381,7 @@
     <string>&amp;Redo last screenshot</string>
    </property>
   </action>
-  <action name="action_Selection">
+  <action name="actionSelection">
    <property name="icon">
     <iconset theme="select-rectangular"/>
    </property>
@@ -389,7 +389,7 @@
     <string>&amp;Selection</string>
    </property>
   </action>
-  <action name="action_Desktop">
+  <action name="actionDesktop">
    <property name="icon">
     <iconset resource="shutter.qrc">
      <normaloff>:/shutter/icons/desktop.svg</normaloff>:/shutter/icons/desktop.svg</iconset>
@@ -398,7 +398,7 @@
     <string>&amp;Desktop</string>
    </property>
   </action>
-  <action name="action_Active_Window">
+  <action name="actionActiveWindow">
    <property name="icon">
     <iconset resource="shutter.qrc">
      <normaloff>:/shutter/icons/sel_window_active.svg</normaloff>:/shutter/icons/sel_window_active.svg</iconset>
@@ -407,7 +407,7 @@
     <string>&amp;Active Window</string>
    </property>
   </action>
-  <action name="actionSelect_Window">
+  <action name="actionSelectWindow">
    <property name="icon">
     <iconset resource="shutter.qrc">
      <normaloff>:/shutter/icons/sel_window.svg</normaloff>:/shutter/icons/sel_window.svg</iconset>
@@ -416,7 +416,7 @@
     <string>Select &amp;Window</string>
    </property>
   </action>
-  <action name="action_Menu">
+  <action name="actionMenu">
    <property name="icon">
     <iconset resource="shutter.qrc">
      <normaloff>:/shutter/icons/sel_window_menu.svg</normaloff>:/shutter/icons/sel_window_menu.svg</iconset>
@@ -425,7 +425,7 @@
     <string>&amp;Menu</string>
    </property>
   </action>
-  <action name="action_Tooltip">
+  <action name="actionTooltip">
    <property name="icon">
     <iconset resource="shutter.qrc">
      <normaloff>:/shutter/icons/sel_window_tooltip.svg</normaloff>:/shutter/icons/sel_window_tooltip.svg</iconset>
@@ -434,7 +434,7 @@
     <string>&amp;Tooltip</string>
    </property>
   </action>
-  <action name="actionW_eb">
+  <action name="actionWeb">
    <property name="icon">
     <iconset theme="text-html"/>
    </property>
@@ -442,7 +442,7 @@
     <string>W&amp;eb</string>
    </property>
   </action>
-  <action name="actionImport_from_clipboard">
+  <action name="actionImportFromClipboard">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::EditPaste"/>
    </property>
@@ -450,27 +450,27 @@
     <string>Import from &amp;clipboard</string>
    </property>
   </action>
-  <action name="action_Open_with">
+  <action name="actionOpenWith">
    <property name="text">
     <string>&amp;Open with</string>
    </property>
   </action>
-  <action name="actionShow_in_folder">
+  <action name="actionShowInFolder">
    <property name="text">
     <string>Show in &amp;folder</string>
    </property>
   </action>
-  <action name="action_Rename">
+  <action name="actionRename">
    <property name="text">
     <string>&amp;Rename</string>
    </property>
   </action>
-  <action name="actionSend_to">
+  <action name="actionSendTo">
    <property name="text">
     <string>Send &amp;to...</string>
    </property>
   </action>
-  <action name="actionE_xport">
+  <action name="actionExport">
    <property name="icon">
     <iconset theme="document-share"/>
    </property>
@@ -478,12 +478,12 @@
     <string>E&amp;xport...</string>
    </property>
   </action>
-  <action name="actionPublic_URLs">
+  <action name="actionPublicURLs">
    <property name="text">
     <string>Public &amp;URLs</string>
    </property>
   </action>
-  <action name="action_Edit">
+  <action name="actionEdit">
    <property name="icon">
     <iconset resource="shutter.qrc">
      <normaloff>:/shutter/icons/draw.svg</normaloff>:/shutter/icons/draw.svg</iconset>
@@ -492,12 +492,12 @@
     <string>&amp;Edit...</string>
    </property>
   </action>
-  <action name="actionRun_a_plugin">
+  <action name="actionRunPlugin">
    <property name="text">
     <string>Run a &amp;plugin</string>
    </property>
   </action>
-  <action name="action_Back">
+  <action name="actionBack">
    <property name="icon">
     <iconset theme="go-previous"/>
    </property>
@@ -505,7 +505,7 @@
     <string>&amp;Back</string>
    </property>
   </action>
-  <action name="action_Forward">
+  <action name="actionForward">
    <property name="icon">
     <iconset theme="go-next"/>
    </property>
@@ -513,7 +513,7 @@
     <string>&amp;Forward</string>
    </property>
   </action>
-  <action name="actionF_irst">
+  <action name="actionFirst">
    <property name="icon">
     <iconset theme="go-first"/>
    </property>
@@ -521,7 +521,7 @@
     <string>F&amp;irst</string>
    </property>
   </action>
-  <action name="action_Last">
+  <action name="actionLast">
    <property name="icon">
     <iconset theme="go-last"/>
    </property>
@@ -529,17 +529,17 @@
     <string>&amp;Last</string>
    </property>
   </action>
-  <action name="actionGet_Help_Online">
+  <action name="actionGetHelpOnline">
    <property name="text">
     <string>Get &amp;Help Online</string>
    </property>
   </action>
-  <action name="action_Translate_this_application">
+  <action name="actionTranslateThisApplication">
    <property name="text">
     <string>&amp;Translate this application</string>
    </property>
   </action>
-  <action name="action_Report_a_problem">
+  <action name="actionReportProblem">
    <property name="text">
     <string>&amp;Report a problem</string>
    </property>

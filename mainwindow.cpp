@@ -1,14 +1,19 @@
-#include "shuttermainwindow.h"
-
 #include <QToolButton>
 
-#include "ui_shuttermainwindow.h"
+#include "aboutdialog.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 
-ShutterMainWindow::ShutterMainWindow(QWidget* parent)
-	: QMainWindow(parent), ui(new Ui::ShutterMainWindow) {
+namespace shutter {
+MainWindow::MainWindow(QWidget* parent)
+	: QMainWindow(parent), ui(new Ui::MainWindow) {
 	ui->setupUi(this);
+
 	connect(ui->actionQuit, &QAction::triggered,
 	        [this](bool) { this->close(); });
+
+	connect(ui->actionAbout, &QAction::triggered,
+	        [](bool) { AboutDialog().exec(); });
 
 	auto* desktop = new QToolButton(this);
 	desktop->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
@@ -47,4 +52,5 @@ ShutterMainWindow::ShutterMainWindow(QWidget* parent)
 	m3->addAction(ui->actionCopy);
 }
 
-ShutterMainWindow::~ShutterMainWindow() { delete ui; }
+MainWindow::~MainWindow() { delete ui; }
+}  // namespace shutter

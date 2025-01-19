@@ -1,10 +1,13 @@
 <RCC>
-	<qresource prefix="/shutter">
-		<file>icons/desktop.svg</file>
-		<file>icons/draw.svg</file>
-		<file>icons/sel_window_active.svg</file>
-		<file>icons/sel_window_menu.svg</file>
-		<file>icons/sel_window_tooltip.svg</file>
-		<file>icons/sel_window.svg</file>
-	</qresource>
+    <qresource prefix="/shutter">
+        <file>icons/desktop.svg</file>
+        <file>icons/draw.svg</file>
+        <file>icons/sel_window_active.svg</file>
+        <file>icons/sel_window_menu.svg</file>
+        <file>icons/sel_window_tooltip.svg</file>
+        <file>icons/sel_window.svg</file>
+        <file>icons/shutter.svg</file>
+        <file>data/credits.txt</file>
+        <file>data/license.txt</file>
+    </qresource>
 </RCC>

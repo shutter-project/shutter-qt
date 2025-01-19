@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.19)
-project(shutter LANGUAGES CXX)
+project(shutter VERSION 0.999.1 LANGUAGES CXX)
+
+configure_file(gen_version.h.in gen_version.h)
+add_library(version version.cpp version.h)
+target_include_directories(version PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools)
 
@@ -8,10 +12,11 @@ qt_standard_project_setup()
 set(CMAKE_AUTORCC true)
 qt_add_executable(shutter
     main.cpp
-    shuttermainwindow.cpp
-    shuttermainwindow.h
-    shuttermainwindow.ui
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
     shutter.qrc
+    aboutdialog.h aboutdialog.cpp aboutdialog.ui
 )
 
 qt_add_translations(
@@ -23,6 +28,7 @@ target_link_libraries(shutter
     PRIVATE
         Qt::Core
         Qt::Widgets
+        version
 )
 
 include(GNUInstallDirs)

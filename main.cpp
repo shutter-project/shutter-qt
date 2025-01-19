@@ -2,7 +2,7 @@
 #include <QLocale>
 #include <QTranslator>
 
-#include "shuttermainwindow.h"
+#include "mainwindow.h"
 
 int main(int argc, char* argv[]) {
 	QApplication a(argc, argv);
@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 		}
 	}
 
-	ShutterMainWindow w;
+	shutter::MainWindow w;
 	w.show();
 	return a.exec();
 }

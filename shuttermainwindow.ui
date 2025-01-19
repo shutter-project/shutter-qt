@@ -183,7 +183,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
-    <string>toolBar</string>
+    <string>Toolbar</string>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -196,8 +196,8 @@
    <addaction name="actionSelection"/>
    <addaction name="actionMenu"/>
    <addaction name="actionTooltip"/>
+   <addaction name="separator"/>
    <addaction name="actionEdit"/>
-   <addaction name="actionExport"/>
   </widget>
   <action name="actionOpen">
    <property name="icon">
@@ -388,6 +388,9 @@
    <property name="text">
     <string>&amp;Selection</string>
    </property>
+   <property name="toolTip">
+    <string>Draw a rectangular capture area with your mouse to select a specified screen area</string>
+   </property>
   </action>
   <action name="actionDesktop">
    <property name="icon">
@@ -396,6 +399,9 @@
    </property>
    <property name="text">
     <string>&amp;Desktop</string>
+   </property>
+   <property name="toolTip">
+    <string>Take a screenshot of your whole desktop</string>
    </property>
   </action>
   <action name="actionActiveWindow">
@@ -424,6 +430,9 @@
    <property name="text">
     <string>&amp;Menu</string>
    </property>
+   <property name="toolTip">
+    <string>Select a single menu or cascading menus from any application</string>
+   </property>
   </action>
   <action name="actionTooltip">
    <property name="icon">
@@ -433,6 +442,9 @@
    <property name="text">
     <string>&amp;Tooltip</string>
    </property>
+   <property name="toolTip">
+    <string>Capture a tooltip</string>
+   </property>
   </action>
   <action name="actionWeb">
    <property name="icon">
@@ -440,6 +452,9 @@
    </property>
    <property name="text">
     <string>W&amp;eb</string>
+   </property>
+   <property name="toolTip">
+    <string>Take a screenshot of a website</string>
    </property>
   </action>
   <action name="actionImportFromClipboard">
@@ -477,6 +492,9 @@
    <property name="text">
     <string>E&amp;xport...</string>
    </property>
+   <property name="toolTip">
+    <string>Upload your images to an image hosting service, FTP site or export them to an arbitrary folder</string>
+   </property>
   </action>
   <action name="actionPublicURLs">
    <property name="text">
@@ -490,6 +508,9 @@
    </property>
    <property name="text">
     <string>&amp;Edit...</string>
+   </property>
+   <property name="toolTip">
+    <string>Use the built-in editor to highlight important fragments of your screenshot or crop it to a desired size</string>
    </property>
   </action>
   <action name="actionRunPlugin">

@@ -3,13 +3,11 @@
 
 #include <QMainWindow>
 
-QT_BEGIN_NAMESPACE
+namespace shutter {
 namespace Ui {
 class MainWindow;
 }
-QT_END_NAMESPACE
 
-namespace shutter {
 class MainWindow : public QMainWindow {
 	Q_OBJECT
 

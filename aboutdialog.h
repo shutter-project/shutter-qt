@@ -3,11 +3,11 @@
 
 #include <QDialog>
 
+namespace shutter {
 namespace Ui {
 class AboutDialog;
 }
 
-namespace shutter {
 class AboutDialog : public QDialog {
 	Q_OBJECT
 

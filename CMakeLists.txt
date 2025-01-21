@@ -5,7 +5,7 @@ configure_file(gen_version.h.in gen_version.h)
 add_library(version version.cpp version.h)
 target_include_directories(version PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools DBus)
 
 qt_standard_project_setup()
 
@@ -15,6 +15,7 @@ qt_add_executable(shutter
     shutter.qrc
     mainwindow.cpp mainwindow.h mainwindow.ui
     aboutdialog.cpp aboutdialog.h aboutdialog.ui
+    singleapp.cpp singleapp.h
 )
 
 qt_add_translations(
@@ -25,6 +26,7 @@ qt_add_translations(
 target_link_libraries(shutter
     PRIVATE
         Qt::Core
+        Qt::DBus
         Qt::Widgets
         version
 )

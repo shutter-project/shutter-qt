@@ -54,6 +54,17 @@ int main(int argc, char* argv[]) {
 		w.show();
 		w.activateWindow();
 	});
+
+	QObject::connect(&icon, &QSystemTrayIcon::activated,
+	                 [&](QSystemTrayIcon::ActivationReason reason) {
+						 if (reason == QSystemTrayIcon::Trigger) {
+							 if (w.isVisible()) {
+								 w.hide();
+							 } else {
+								 w.show();
+							 }
+						 }
+					 });
 	w.show();
 	return a.exec();
 }

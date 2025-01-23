@@ -22,6 +22,8 @@ AboutDialog::AboutDialog(QWidget* parent)
 	ui->textBuild->setText(
 		tr("Shutter %1\nRunning with Qt %2\nBuilt with Qt %3")
 			.arg(getVersion(), qVersion(), QT_VERSION_STR));
+
+	connect(ui->buttonBox, &QDialogButtonBox::rejected, [&] { reject(); });
 }
 
 AboutDialog::~AboutDialog() { delete ui; }

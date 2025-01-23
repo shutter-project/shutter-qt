@@ -17,6 +17,7 @@ qt_add_executable(shutter
     aboutdialog.cpp aboutdialog.h aboutdialog.ui
     singleapp.cpp singleapp.h
     selectionwindow.cpp selectionwindow.h
+    traymenu.cpp traymenu.h traymenu.ui
 )
 
 qt_add_translations(

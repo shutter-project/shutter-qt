@@ -2,11 +2,13 @@
 #include <QDBusConnection>
 #include <QDBusInterface>
 #include <QLocale>
+#include <QSystemTrayIcon>
 #include <QTranslator>
 #include <QWindow>
 
 #include "mainwindow.h"
 #include "singleapp.h"
+#include "traymenu.h"
 
 int main(int argc, char* argv[]) {
 	auto dbus = QDBusConnection::sessionBus();
@@ -37,6 +39,11 @@ int main(int argc, char* argv[]) {
 			break;
 		}
 	}
+
+	shutter::TrayMenu menu;
+	QSystemTrayIcon icon(QPixmap(":/shutter/icons/shutter.svg"));
+	icon.setContextMenu(&menu);
+	icon.show();
 
 	shutter::MainWindow w;
 	QObject::connect(&single, &shutter::SingleApp::raised, [&] {

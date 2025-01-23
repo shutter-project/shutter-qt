@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>shutter::TrayMenu</class>
+ <widget class="QMenu" name="shutter::TrayMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>210</width>
+    <height>112</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="title">
+   <string/>
+  </property>
+  <action name="actionShow">
+   <property name="text">
+    <string>Show</string>
+   </property>
+  </action>
+  <action name="actionSelection">
+   <property name="icon">
+    <iconset theme="select-rectangular"/>
+   </property>
+   <property name="text">
+    <string>Selection</string>
+   </property>
+  </action>
+  <addaction name="actionShow"/>
+  <addaction name="actionSelection"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

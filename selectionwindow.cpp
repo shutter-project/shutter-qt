@@ -26,9 +26,11 @@ void SelectionWindow::keyPressEvent(QKeyEvent* event) {
 
 void SelectionWindow::mouseReleaseEvent(QMouseEvent* event) {
 	m_pix = QPixmap::fromImage(m_pix.toImage().copy(rubberBandRect()));
-	// TODO: do something useful with the image instead
+	setDragMode(DragMode::NoDrag);
 	m_scene->clear();
 	m_scene->addPixmap(m_pix);
+	showNormal();
+	resize(m_pix.size());
 	QGraphicsView::mouseReleaseEvent(event);
 }
 

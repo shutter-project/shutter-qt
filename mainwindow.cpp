@@ -1,7 +1,9 @@
+#include "mainwindow.h"
+
 #include <QToolButton>
 
 #include "aboutdialog.h"
-#include "mainwindow.h"
+#include "selectionwindow.h"
 #include "ui_mainwindow.h"
 
 namespace shutter {
@@ -10,10 +12,15 @@ MainWindow::MainWindow(QWidget* parent)
 	ui->setupUi(this);
 
 	connect(ui->actionQuit, &QAction::triggered,
-	        [this](bool) { this->close(); });
+	        [this](bool) { qApp->quit(); });
 
 	connect(ui->actionAbout, &QAction::triggered,
 	        [](bool) { AboutDialog().exec(); });
+
+	connect(ui->actionSelection, &QAction::triggered, [this](bool) {
+		SelectionWindow* win = new SelectionWindow();
+		win->showFullScreen();
+	});
 
 	auto* desktop = new QToolButton(this);
 	desktop->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);

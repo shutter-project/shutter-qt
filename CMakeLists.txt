@@ -16,6 +16,7 @@ qt_add_executable(shutter
     mainwindow.cpp mainwindow.h mainwindow.ui
     aboutdialog.cpp aboutdialog.h aboutdialog.ui
     singleapp.cpp singleapp.h
+    selectionwindow.cpp selectionwindow.h
 )
 
 qt_add_translations(

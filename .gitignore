@@ -80,3 +80,7 @@ CMakeLists.txt.user*
 .rcc/
 .uic/
 /build*/
+
+# Claude Code personal files (may hold secrets)
+**/.claude/settings.local.json
+CLAUDE.local.md
